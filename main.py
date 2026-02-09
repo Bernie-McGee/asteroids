@@ -26,6 +26,8 @@ def main():
                 return
             pass
         screen.fill("black")
+        # Update player:
+        player.update(dt)
         # Draw the player:
         player.draw(screen)
         # Refresh the screen
