@@ -57,7 +57,7 @@ def main():
                 if bullet.collides_with(a):
                     log_event("asteroid_shot")
                     bullet.kill()
-                    a.kill()
+                    a.split()
         # Loop over everything in the drawables group and draw them:
         for drawing in drawable:
             drawing.draw(screen)
